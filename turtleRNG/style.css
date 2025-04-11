@@ -1,6 +1,6 @@
 button {
     background-color: var(--tg-theme-button-color);
-    border-width: 0px;
+    border: 0px none;
     border-radius: 5px;
     color: var(--tg-theme-button-text-color);
     cursor: pointer;

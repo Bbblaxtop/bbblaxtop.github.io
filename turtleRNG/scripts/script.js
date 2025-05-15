@@ -1,3 +1,3 @@
 const tg = window.Telegram.WebApp
 tg.isExpanded
-tg.expand()
+tg.expand() //0,17,34

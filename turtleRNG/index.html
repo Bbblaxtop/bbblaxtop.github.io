@@ -10,8 +10,17 @@
 <body>
     <script src="scripts/script.js"></script>
 
-    <button onclick="alert('hello')" class="roll-btn">ROLL</button>
+    <button onclick="document.getElementById('popup').style.display = 'block'" class="roll-btn">ROLL</button>
 
-    
+    <div class="popup" id="popup">
+        <span class="helper"></span>
+        <div class="ludik-container" id="ludik-container">
+            <div id="image-turtle">
+                <img src="assets/turtles/turtle_classic.png">
+            </div>
+            <h5 class="turtle-rarity">Common</h5>
+            <h3 class="turtle-title">Classic Turtle</h3>
+        </div>
+    </div>
 </body>
 </html>

@@ -10,16 +10,16 @@
 <body>
     <script src="scripts/script.js"></script>
 
-    <button onclick="document.getElementById('popup').style.display = 'block'" class="roll-btn">ROLL</button>
+    <button onclick="document.getElementById('popup').style.display = 'block'; roll();" class="roll-btn">ROLL</button>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup" onclick="document.getElementById('popup').style.display = 'none'">
         <span class="helper"></span>
         <div class="ludik-container" id="ludik-container">
             <div id="image-turtle">
-                <img src="assets/turtles/turtle_classic.png">
+                <img src="assets/turtles/0.png" id="img-t">
             </div>
-            <h5 class="turtle-rarity">Common</h5>
-            <h3 class="turtle-title">Classic Turtle</h3>
+            <h5 class="turtle-rarity">???</h5>
+            <h3 class="turtle-title">???</h3>
         </div>
     </div>
 </body>

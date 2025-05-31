@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html body {
+    background: url("https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/55b678ff-15c3-49d5-bdbc-40f8413cfb8a.avif") no-repeat fixed;
+    background-size: cover;
+    font-family: Inter;
+    background-color: black;
+    margin: 60px;
+    text-shadow: 0px 0px 5px;
+    color: white;
+    text-align: center;
+    user-select: none;
+    font-weight: bold;
+}
+
+#container{
+    background-color: #ffffff10;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    margin: 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ffffff10;
+}
+
+hr{
+    background-color: #00000000;
+    border: solid 1px #333;
+}
+
+input{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    color: black;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+#submit{
+    background-color: #0a0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    transition: 200ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #0a0;
+}
+
+#submit:hover{
+    background-color: #0b0;
+    box-shadow: 0px 0px 20px #0b0;
+}

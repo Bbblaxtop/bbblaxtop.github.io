@@ -16,7 +16,6 @@ html body {
     font-family: Inter;
     font-weight: bold;
     background-color: #001122;
-    margin: 0;
 }
 
 .roll-btn {
@@ -40,6 +39,7 @@ html body {
     top: 0;
     width: 100%;
     z-index: 10000;
+    backdrop-filter: blur(10px);
 }
 
 .ludik-container {
@@ -64,13 +64,15 @@ html body {
 
 #image-turtle>img {
     width: 150px;
+    filter: brightness(0);
+    transition: filter 1s;
 }
 
 #image-turtle {
     justify-content: center;
     display: flex;
     align-items: center;
-    background: linear-gradient(0deg,#0f0,rgb(0,0,0,0)) no-repeat;
+    background: linear-gradient(0deg,#000,rgb(0,0,0,0)) no-repeat;
     background-position-y: 50px;
     border-radius: 10px;
 }
@@ -80,5 +82,5 @@ html body {
 }
 
 .turtle-rarity {
-    color: #0f0;
+    color: #000;
 }

@@ -10,7 +10,7 @@
 <body>
     <button onclick="document.getElementById('popup').style.display = 'block'; roll();" class="roll-btn">ROLL</button>
 
-    <div class="popup" id="popup" onclick="document.getElementById('popup').style.display = 'none'">
+    <div class="popup" id="popup" onclick="if(canClose == true){document.getElementById('popup').style.display = 'none'}">
         <span class="helper"></span>
         <div class="ludik-container" id="ludik-container">
             <div id="image-turtle">

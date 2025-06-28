@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="scripts/script.js"></script>
-
     <button onclick="document.getElementById('popup').style.display = 'block'; roll();" class="roll-btn">ROLL</button>
 
     <div class="popup" id="popup" onclick="document.getElementById('popup').style.display = 'none'">
@@ -18,9 +16,11 @@
             <div id="image-turtle">
                 <img src="assets/turtles/0.png" id="img-t">
             </div>
-            <h5 class="turtle-rarity">???</h5>
-            <h3 class="turtle-title">???</h3>
+            <h5 id="turtle-rarity">???</h5>
+            <h3 id="turtle-title"><h3 id="q"></h3></h3>
         </div>
     </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

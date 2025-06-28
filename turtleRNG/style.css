@@ -16,6 +16,7 @@ html body {
     font-family: Inter;
     font-weight: bold;
     background-color: #001122;
+    user-select: none;
 }
 
 .roll-btn {

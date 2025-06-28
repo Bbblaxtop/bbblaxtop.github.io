@@ -25,10 +25,11 @@ html body {
     border: solid 1px #00a1ee;
     color: white;
     cursor: pointer;
-    padding: 7px;
+    padding: 2%;
     font-family: Inter;
     font-weight: bold;
     width: 100%;
+    font-size: 100%;
 }
 
 .popup {

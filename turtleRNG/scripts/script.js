@@ -13,12 +13,52 @@ var turtles = [
     },
     {
         title: "Rich Turtle",
-        rarity: 5,
+        rarity: 3,
         pic: "assets/turtles/1.png"
+    },
+    {
+        title: "Happiest Turtle",
+        rarity: 4,
+        pic: "assets/turtles/2.png"
+    },
+    {
+        title: "Hedgehog Turtle",
+        rarity: 1,
+        pic: "assets/turtles/3.png"
+    },
+    {
+        title: "Turtle on Turtle",
+        rarity: 2,
+        pic: "assets/turtles/4.png"
+    },
+    {
+        title: "Turtle with monocle",
+        rarity: 0,
+        pic: "assets/turtles/5.png"
+    },
+    {
+        title: "Spider Turtle",
+        rarity: 3,
+        pic: "assets/turtles/6.png"
+    },
+    {
+        title: "Sad Turtle",
+        rarity: 4,
+        pic: "assets/turtles/7.png"
+    },
+    {
+        title: "Laughing Turtle",
+        rarity: 4,
+        pic: "assets/turtles/8.png"
+    },
+    {
+        title: "Wooden Turtle",
+        rarity: 0,
+        pic: "assets/turtles/9.png"
     }
 ]
 
-var rarities = ["#00ff00","#222222","#00aaff","#aa00ff","#cc00ff","#aa0000"]
+var rarities = ["#00ff00","#222222","#00aaff","#aa00ff","#cc00ff","#aa0000"] // 0 - Common | 1 - Uncommon | 2 - Rare | 3 - Epic | 4 - Legendary | 5 - Mythical
 var raritiesText = ["Common","Uncommon","Rare","Epic","Legendary","Mythical"]
 
 function getRandomArbitrary(min, max) {
@@ -42,20 +82,20 @@ document.getElementById("q").textContent = ""
 
     document.getElementById("img-t").src = turtles[result].pic
 
+    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 200);
+    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 200);
+
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 400);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 400);
+
+    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 600);
+    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 600);
 
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 800);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 800);
 
-    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 1200);
-    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 1200);
-
-    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 1600);
-    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 1600);
-
-    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 2000);
-    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 2000);
+    setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 1000);
+    setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 1000);
     setTimeout(() => getOut(), 2000);
 
     function getOut(){

@@ -25,7 +25,10 @@ function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
 
+var canClose = false
+
 function roll(){
+canClose = false
     document.getElementById("image-turtle").style.background = "linear-gradient(0deg, " + "#000000" + ",rgb(0,0,0,0)) no-repeat"
 document.getElementById("q").textContent = ""
     document.getElementById("img-t").style.filter = "brightness(0)"
@@ -68,5 +71,6 @@ document.getElementById("q").textContent = ""
         } else {
             document.getElementById("q").textContent = ""
         }
+        canClose = true
     }
 }

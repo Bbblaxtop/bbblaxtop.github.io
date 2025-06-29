@@ -138,6 +138,9 @@ var turtles = [
     },
 ]
 
+var pick = new Audio('assets/sounds/pick.wav');
+var roll_end = new Audio('assets/sounds/end.wav');
+
 var rarities = ["#00ff00","#222222","#00aaff","#aa00ff","#cc00ff","#aa0000"] // 0 - Common | 1 - Uncommon | 2 - Rare | 3 - Epic | 4 - Legendary | 5 - Mythical
 var raritiesText = ["Common","Uncommon","Rare","Epic","Legendary","Mythical"]
 
@@ -162,21 +165,28 @@ document.getElementById("q").textContent = ""
 
     document.getElementById("img-t").src = turtles[result].pic
 
+
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 200);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 200);
+    setTimeout(() => pick.play(), 200);
+
 
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 400);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 400);
+    setTimeout(() => pick.play(), 400);
 
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 600);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 600);
+    setTimeout(() => pick.play(), 600);
 
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 800);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 800);
+    setTimeout(() => pick.play(), 800);
 
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 1000);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 1000);
     setTimeout(() => getOut(), 2000);
+    setTimeout(() => roll_end.play(), 2000);
 
     function getOut(){
         document.getElementById("image-turtle").style.background = "linear-gradient(0deg, " + rarities[turtles[result].rarity] + ",rgb(0,0,0,0)) no-repeat"

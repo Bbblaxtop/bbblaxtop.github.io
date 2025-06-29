@@ -55,7 +55,87 @@ var turtles = [
         title: "Wooden Turtle",
         rarity: 0,
         pic: "assets/turtles/9.png"
-    }
+    },
+    {
+        title: "Saddest Turtle",
+        rarity: 3,
+        pic: "assets/turtles/10.png"
+    },
+    {
+        title: "Epic Turtle",
+        rarity: 5,
+        pic: "assets/turtles/11.png"
+    },
+    {
+        title: "Invisible Turtle",
+        rarity: 3,
+        pic: "assets/turtles/12.png"
+    },
+    {
+        title: "King of Turtles",
+        rarity: 5,
+        pic: "assets/turtles/13.png"
+    },
+    {
+        title: "Mutated Turtle",
+        rarity: 3,
+        pic: "assets/turtles/14.png"
+    },
+    {
+        title: "Cook Turtle",
+        rarity: 0,
+        pic: "assets/turtles/15.png"
+    },
+    {
+        title: "Sad Turtle",
+        rarity: 2,
+        pic: "assets/turtles/16.png"
+    },
+    {
+        title: "Turtle with Rose",
+        rarity: 5,
+        pic: "assets/turtles/17.png"
+    },
+    {
+        title: "Patriotic Turtle",
+        rarity: 3,
+        pic: "assets/turtles/18.png"
+    },
+    {
+        title: "Turtle with Goggle Eyes",
+        rarity: 0,
+        pic: "assets/turtles/19.png"
+    },
+    {
+        title: "Retro Turtle",
+        rarity: 2,
+        pic: "assets/turtles/20.png"
+    },
+    {
+        title: "Evil Demon Turtle",
+        rarity: 3,
+        pic: "assets/turtles/21.png"
+    },
+    {
+        title: "Happy Demon Turtle",
+        rarity: 4,
+        pic: "assets/turtles/22.png"
+    },
+    {
+        title: "Cowboy Turtle",
+        rarity: 2,
+        pic: "assets/turtles/23.png"
+    },
+    {
+        title: "Sad Turtle (curved mouth)",
+        rarity: 2,
+        pic: "assets/turtles/24.png"
+    },
+    {
+        title: "Clown Turtle",
+        rarity: 1,
+        pic: "assets/turtles/25.png"
+    },
 ]
 
 var rarities = ["#00ff00","#222222","#00aaff","#aa00ff","#cc00ff","#aa0000"] // 0 - Common | 1 - Uncommon | 2 - Rare | 3 - Epic | 4 - Legendary | 5 - Mythical

@@ -165,6 +165,7 @@ document.getElementById("q").textContent = ""
 
     document.getElementById("img-t").src = turtles[result].pic
 
+
     setTimeout(() => result = Math.round(getRandomArbitrary(0,turtles.length-1)), 200);
     setTimeout(() => document.getElementById("img-t").src = turtles[result].pic, 200);
     setTimeout(() => pick.play(), 200);

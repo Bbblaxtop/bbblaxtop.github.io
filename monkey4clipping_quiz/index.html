@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey For Clipping Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="warning-bg">
+        <div id="warning-popup">
+            <h3>Warning</h3>
+            <p>Please answer all questions honestly, otherwise the results will be inaccurate.</p>
+            <p>If you found a demonstration of this page and you dont believe in results, you can take this test yourself and see the results. </p>
+            <p>After answering on questions, you see a percentage of if streamer is monkey for clipping</p>
+            <p>Original author of this page is <a href="https://github.com/Bbblaxtop">gridblu</a></p>
+            <p>Read this warning carefully and enter into text field 'I read this warning carefully'</p>
+            <p>I take no responsibility for inaccurate results, bans on Discord servers, or loss of reputation/viewers on Twitch/YouTube.</p>
+            <p>I hope you have a Page Down, Arrows Keys or Scroll Whell to scroll down for input</p>
+            <p>Thank you for your understanding and politeness.</p>
+            <input id="agreement" class="text-field" placeholder="I understand a warning">
+            <hr>
+            <button class="button" onclick="agreement()">Continue</button>
+        </div>
+    </div>
+
+    <h1 id="title">Monkey for Clipping Quiz</h1>
+    <div id="config">
+        <input type="text" id="nickname" class="text-field" placeholder="Nickname of streamer">
+        <hr>
+        <button class="button" onclick="configureStreamer()">Continue</button>
+    </div>
+
+    <div id="question">
+        <h3 id="q">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe labore rerum nulla repudiandae! Consectetur dolore aperiam rem saepe itaque nihil sit veniam, quod quam debitis vel nobis. Mollitia, reprehenderit recusandae?</h3>
+        <button class="button" id="q-yes" onclick="yes()">True</button>
+        <button class="button" id="q-no" onclick="no()">False</button>
+    </div>
+
+    <h3 id="baitilka">Calculating results...</h3>
+
+    <div id="result">
+        <h3 id="notify-user">[STREAMER NAME] is a <u>monkey for clipping</u> at</h3>
+        <h1 id="percentage"><span id="percentage-spoiler">67</span>%</h1>
+        <button class="button" onclick="restart()">Restart quiz</button>
+    </div>
+
+    <div id="copyright">
+        <p>© 2023-2026 gridblu. All rights reserved. <a href="https://raw.githubusercontent.com/Bbblaxtop/bbblaxtop.github.io/refs/heads/main/LICENSE">Learn more.</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
